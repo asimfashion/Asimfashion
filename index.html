@@ -1,42 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asim Fashion</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.icons span {
+  margin-left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* SEARCH */
+.search-box {
+  padding: 10px;
+}
+.search-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.menu div {
+  font-size: 14px;
+}
+
+/* CATEGORY */
+.categories {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+}
+.cat {
+  text-align: center;
+  margin-right: 15px;
+}
+.cat img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.cat p {
+  font-size: 12px;
+}
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp a {
+  background: green;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>☰</div>
+  <div class="logo">ASIM FASHION</div>
+  <div class="icons">
+    <span>👤</span>
+    <span>🛒</span>
+    <span>❤️</span>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" placeholder="Search for products...">
+</div>
+
+<!-- MENU -->
+<div class="menu">
+  <div>WOMEN</div>
+  <div>MEN</div>
+  <div>BRIDAL</div>
+  <div>LUXE</div>
+</div>
+
+<!-- CATEGORY -->
 <div class="categories">
-
-    <div class="cat">
-        <img src="https://images.unsplash.com/photo-1520975922284-9e0f5c3c7b5b">
-        <p>Men Shirts</p>
-    </div>
-
-    <div class="cat">
-        <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
-        <p>Women Kurtas</p>
-    </div>
-
-    <div class="cat">
-        <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
-        <p>Lowers</p>
-    </div>
-
-    <div class="cat">
-        <img src="https://images.unsplash.com/photo-1528701800489-20be3c1a02c1">
-        <p>Shoes</p>
-    </div>
-
-</div>
-<div class="products">
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <p>Stylish Shirt</p>
-    </div>
-
-    <div class="card">
-        <img src="https://via.placeholder.com/200">
-        <p>Kurta Collection</p>
-    </div>
-
+  <div class="cat">
+    <img src="https://i.imgur.com/1.jpg">
+    <p>Ready To Ship</p>
+  </div>
+  <div class="cat">
+    <img src="https://i.imgur.com/2.jpg">
+    <p>Saree</p>
+  </div>
+  <div class="cat">
+    <img src="https://i.imgur.com/3.jpg">
+    <p>Salwar</p>
+  </div>
+  <div class="cat">
+    <img src="https://i.imgur.com/4.jpg">
+    <p>Lehenga</p>
+  </div>
+  <div class="cat">
+    <img src="https://i.imgur.com/5.jpg">
+    <p>Indo Western</p>
+  </div>
 </div>
 
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/918700007955">💬</a>
+<!-- BANNER -->
+<div class="banner">
+  <img src="https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f">
+</div>
+
+<!-- WHATSAPP -->
+<div class="whatsapp">
+  <a href="https://wa.me/918700007955">💬</a>
+</div>
 
 </body>
 </html>
