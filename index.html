@@ -1,117 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asim Fashion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f3f3f3;
+    }
 
-<title>Asim Fashion</title>
+    header {
+      background: black;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+    }
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    header img {
+      width: 180px;
+      margin-bottom: 10px;
+    }
 
-<style>
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #333;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-/* LOGO */
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  letter-spacing: 6px;
-  padding: 20px;
-}
+    .product {
+      background: white;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 12px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
 
-/* CATEGORY */
-.categories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 15px;
-}
+    .product:hover {
+      transform: scale(1.05);
+    }
 
-.cat {
-  text-align: center;
-}
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-.cat img {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  object-fit: cover;
-}
+    .btn {
+      display: inline-block;
+      background: green;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
 
-.cat p {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-.whatsapp a {
-  background: green;
-  color: white;
-  padding: 14px 16px;
-  border-radius: 50%;
-  font-size: 22px;
-  text-decoration: none;
-}
-
-</style>
+    footer {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
-<div class="logo">ASIM FASHION</div>
+<header>
+  <img src="logo.png">
+  <h1>ASIM FASHION</h1>
+  <p>Premium Casual & Linen Wear</p>
+</header>
 
-<!-- CATEGORY -->
-<div class="categories">
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176">
-    <p>Kurta</p>
+<!-- Shirts -->
+<h2>Shirts Collection 👕</h2>
+<div class="container">
+  <div class="product">
+    <img src="logo.png">
+    <h3>Linen Shirt</h3>
+    <p>₹999</p>
+    <a class="btn" href="https://wa.me/918700007955?text=Order%20Linen%20Shirt">Order</a>
   </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
-    <p>Shirt</p>
-  </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1583001809873-a128495da465">
-    <p>Lower</p>
-  </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-    <p>Shoes</p>
-  </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1520975922284-9c5d3a1b3eae">
-    <p>Casual Wear</p>
-  </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-    <p>Male / Female</p>
-  </div>
-
 </div>
 
-<!-- WHATSAPP BUTTON -->
-<div class="whatsapp">
-  <a href="https://wa.me/918700007955">💬</a>
+<!-- Kurta -->
+<h2>Kurta Collection 👘</h2>
+<div class="container">
+  <div class="product">
+    <img src="logo.png">
+    <h3>Stylish Kurta</h3>
+    <p>₹1199</p>
+    <a class="btn" href="https://wa.me/918700007955?text=Order%20Kurta">Order</a>
+  </div>
 </div>
+
+<!-- Lowers -->
+<h2>Lowers Collection 👖</h2>
+<div class="container">
+  <div class="product">
+    <img src="logo.png">
+    <h3>Casual Lower</h3>
+    <p>₹799</p>
+    <a class="btn" href="https://wa.me/918700007955?text=Order%20Lower">Order</a>
+  </div>
+</div>
+
+<!-- Shorts -->
+<h2>Shorts Collection 🩳</h2>
+<div class="container">
+  <div class="product">
+    <img src="logo.png">
+    <h3>Shorts</h3>
+    <p>₹499</p>
+    <a class="btn" href="https://wa.me/918700007955?text=Order%20Shorts">Order</a>
+  </div>
+</div>
+
+<!-- Shoes -->
+<h2>Shoes Collection 👟</h2>
+<div class="container">
+  <div class="product">
+    <img src="logo.png">
+    <h3>Casual Shoes</h3>
+    <p>₹1499</p>
+    <a class="btn" href="https://wa.me/918700007955?text=Order%20Shoes">Order</a>
+  </div>
+</div>
+
+<footer>
+  <p>Contact: 8700007955</p>
+  <p>© 2026 ASIM FASHION</p>
+</footer>
 
 </body>
 </html>
