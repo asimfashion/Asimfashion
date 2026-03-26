@@ -1,108 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Asim Fashion</title>
+    <title>Asim Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
 
-    /* Logo */
-    .logo {
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      padding: 20px;
-    }
+        .header {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
 
-    /* Categories */
-    .categories {
-      text-align: center;
-      margin: 20px 0;
-    }
+        .tagline {
+            text-align: center;
+            padding: 10px;
+            color: gray;
+        }
 
-    .categories button {
-      margin: 5px;
-      padding: 10px 15px;
-      border: none;
-      background: black;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+        .categories {
+            text-align: center;
+            margin: 20px;
+        }
 
-    /* Product Section */
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
+        .categories button {
+            margin: 10px;
+            padding: 12px 20px;
+            border: none;
+            background: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    .product {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-      border-radius: 10px;
-    }
+        .categories button:hover {
+            background: #444;
+        }
 
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
 
-    /* WhatsApp Button */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      font-size: 24px;
-      padding: 12px 15px;
-      border-radius: 50%;
-      text-decoration: none;
-    }
-  </style>
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: green;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-  <!-- Logo -->
-  <h1 class="logo">Asim Fashion</h1>
+<div class="header">ASIM FASHION</div>
+<div class="tagline">Premium Casual & Linen Wear</div>
 
-  <!-- Categories -->
-  <div class="categories">
-    <button>Kurta</button>
-    <button>Shirt</button>
+<div class="categories">
+    <button>Shirts</button>
+    <button>Kurtas</button>
+    <button>Lowers</button>
     <button>Shoes</button>
-  </div>
+</div>
 
-  <!-- Products -->
-  <div class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="">
-      <p>Kurta</p>
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <p>Stylish Shirt</p>
     </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="">
-      <p>Shirt</p>
+    <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <p>Kurta Collection</p>
     </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/150" alt="">
-      <p>Shoes</p>
+    <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <p>Comfort Lower</p>
     </div>
-  </div>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-btn">
-    💬
-  </a>
+    <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <p>Trendy Shoes</p>
+    </div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/91XXXXXXXXXX">💬</a>
 
 </body>
 </html>
