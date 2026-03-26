@@ -1,23 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asim Fashion</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(45deg, black, #333);
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* CATEGORY */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.cat {
+    text-align: center;
+}
+
+.cat img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cat p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* PRODUCTS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-decoration: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>ASIM FASHION</h1>
+    <p>Premium Collection For You</p>
+</div>
+
+<!-- CATEGORY WITH ICON -->
 <div class="categories">
 
-    <button>
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" width="30"><br>
-        Shirts
-    </button>
+    <div class="cat">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <p>Shirts</p>
+    </div>
 
-    <button>
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892425.png" width="30"><br>
-        Kurtas
-    </button>
+    <div class="cat">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892425.png">
+        <p>Kurtas</p>
+    </div>
 
-    <button>
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892439.png" width="30"><br>
-        Lowers
-    </button>
+    <div class="cat">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892439.png">
+        <p>Lowers</p>
+    </div>
 
-    <button>
-        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png" width="30"><br>
-        Shoes
-    </button>
+    <div class="cat">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <p>Shoes</p>
+    </div>
 
 </div>
+
+<!-- PRODUCTS -->
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>Stylish Shirt</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>Kurta Collection</p>
+    </div>
+
+</div>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/918700007955">💬</a>
+
+</body>
+</html>
