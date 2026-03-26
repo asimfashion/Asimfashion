@@ -1,13 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asim Fashion</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* LOGO */
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  letter-spacing: 6px;
+  padding: 20px;
+}
+
+/* CATEGORY */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.cat {
+  text-align: center;
+}
+
+.cat img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cat p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp a {
+  background: green;
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<div class="logo">ASIM FASHION</div>
+
+<!-- CATEGORY -->
 <div class="categories">
 
   <div class="cat">
-    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
-    <p>Shirts</p>
+    <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176">
+    <p>Kurta</p>
   </div>
 
   <div class="cat">
-    <img src="https://images.unsplash.com/photo-1593032465171-8c6c1c5a9d70">
-    <p>T-Shirts</p>
+    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+    <p>Shirt</p>
   </div>
 
   <div class="cat">
@@ -16,13 +92,26 @@
   </div>
 
   <div class="cat">
-    <img src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176">
-    <p>Kurta</p>
-  </div>
-
-  <div class="cat">
-    <img src="https://images.unsplash.com/photo-1618354691418-4f65e9f5d0d8">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
     <p>Shoes</p>
   </div>
 
+  <div class="cat">
+    <img src="https://images.unsplash.com/photo-1520975922284-9c5d3a1b3eae">
+    <p>Casual Wear</p>
+  </div>
+
+  <div class="cat">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+    <p>Male / Female</p>
+  </div>
+
 </div>
+
+<!-- WHATSAPP BUTTON -->
+<div class="whatsapp">
+  <a href="https://wa.me/918700007955">💬</a>
+</div>
+
+</body>
+</html>
