@@ -1,29 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asim Fashion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: black;
+      color: gold;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    /* CATEGORY */
+    .categories {
+      display: flex;
+      overflow-x: auto;
+      padding: 10px;
+      background: white;
+    }
+
+    .cat {
+      min-width: 100px;
+      margin: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* PRODUCTS (VERTICAL) */
+    .container {
+      padding: 10px;
+    }
+
+    .product {
+      background: white;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .product img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .details {
+      margin-left: 15px;
+    }
+
+    .details h3 {
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: green;
+      color: white;
+      padding: 6px 10px;
+      text-decoration: none;
+      margin-top: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* WHATSAPP FLOAT BUTTON */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp img {
+      width: 30px;
+      height: 30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  ASIM FASHION
+</header>
+
 <!-- CATEGORY -->
 <div class="categories">
+  <div class="cat">Kurta</div>
+  <div class="cat">Shirt</div>
+  <div class="cat">Lower</div>
+  <div class="cat">Shoes</div>
+  <div class="cat">Casual Wear</div>
+</div>
 
-  <div class="cat">
-    <img src="kurta.jpg">
-    <p>Kurta</p>
+<!-- PRODUCTS (VERTICAL) -->
+<div class="container">
+
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157">
+    <div class="details">
+      <h3>Linen Shirt</h3>
+      <a class="btn" href="https://wa.me/918700007955?text=Order%20Linen%20Shirt">Order</a>
+    </div>
   </div>
 
-  <div class="cat">
-    <img src="shirt.jpg">
-    <p>Shirt</p>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
+    <div class="details">
+      <h3>Stylish Kurta</h3>
+      <a class="btn" href="https://wa.me/918700007955?text=Order%20Kurta">Order</a>
+    </div>
   </div>
 
-  <div class="cat">
-    <img src="lower.jpg">
-    <p>Lower</p>
-  </div>
-
-  <div class="cat">
-    <img src="shoes.jpg">
-    <p>Shoes</p>
-  </div>
-
-  <div class="cat">
-    <img src="casual.jpg">
-    <p>Casual Wear</p>
+  <div class="product">
+    <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+    <div class="details">
+      <h3>Lower</h3>
+      <a class="btn" href="https://wa.me/918700007955?text=Order%20Lower">Order</a>
+    </div>
   </div>
 
 </div>
+
+<!-- WHATSAPP ICON -->
+<a class="whatsapp" href="https://wa.me/918700007955">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+</body>
+</html>
