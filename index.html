@@ -6,81 +6,112 @@
 
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      background: #f3f3f3;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
     }
 
     header {
-      background: black;
+      background: linear-gradient(45deg, black, #222);
       color: gold;
       text-align: center;
-      padding: 15px;
-      font-size: 22px;
+      padding: 18px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    /* Search Bar */
+    /* Search */
+    .search-box {
+      padding: 10px;
+      text-align: center;
+      background: white;
+    }
+
     #searchInput {
       width: 90%;
-      padding: 10px;
-      margin: 10px;
-      border-radius: 8px;
-      border: 2px solid black;
+      padding: 12px;
+      border-radius: 25px;
+      border: none;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      outline: none;
+      font-size: 16px;
     }
 
     /* Categories */
     .categories {
       display: flex;
       overflow-x: auto;
-      padding: 10px;
       background: white;
+      padding: 10px;
     }
 
     .cat {
+      padding: 10px 15px;
       margin: 5px;
-      padding: 10px;
+      border-radius: 20px;
+      background: #eee;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: 0.3s;
+    }
+
+    .cat.active, .cat:hover {
       background: black;
       color: white;
-      border-radius: 8px;
-      white-space: nowrap;
     }
 
     /* Products */
+    .container {
+      padding: 10px;
+    }
+
     .product {
       background: white;
-      margin: 10px;
+      margin-bottom: 15px;
+      border-radius: 15px;
       padding: 10px;
-      border-radius: 10px;
       text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.02);
     }
 
     .product img {
       width: 100%;
-      max-width: 200px;
+      max-width: 220px;
       border-radius: 10px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 15px;
-      background: green;
+      padding: 10px 15px;
+      background: #25D366;
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 20px;
+      font-size: 14px;
     }
 
-    /* WhatsApp floating button */
+    /* Floating WhatsApp */
     .whatsapp {
       position: fixed;
       bottom: 15px;
       right: 15px;
       background: #25D366;
       color: white;
-      padding: 12px;
+      font-size: 22px;
+      padding: 14px;
       border-radius: 50%;
-      font-size: 20px;
       text-decoration: none;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -89,47 +120,51 @@
 
 <header>Asim Fashion</header>
 
-<!-- Search Bar -->
-<input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProduct()">
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProduct()">
+</div>
 
 <!-- Categories -->
 <div class="categories">
-  <div class="cat">Kurta</div>
-  <div class="cat">Shirt</div>
-  <div class="cat">Lower</div>
-  <div class="cat">Shoes</div>
-  <div class="cat">Casual Wear</div>
+  <div class="cat active" onclick="filterCategory('all')">All</div>
+  <div class="cat" onclick="filterCategory('kurta')">Kurta</div>
+  <div class="cat" onclick="filterCategory('shirt')">Shirt</div>
+  <div class="cat" onclick="filterCategory('lower')">Lower</div>
+  <div class="cat" onclick="filterCategory('shoes')">Shoes</div>
 </div>
 
 <!-- Products -->
-<div class="product">
-  <img src="https://via.placeholder.com/200">
-  <h3>Kurta</h3>
-  <a class="btn" href="https://wa.me/918700007955?text=Order Kurta">Order</a>
+<div class="container">
+
+  <div class="product" data-category="kurta">
+    <img src="https://via.placeholder.com/200">
+    <h3>Kurta</h3>
+    <a class="btn" href="https://wa.me/918700007955?text=Order Kurta">Order Now</a>
+  </div>
+
+  <div class="product" data-category="shirt">
+    <img src="https://via.placeholder.com/200">
+    <h3>Shirt</h3>
+    <a class="btn" href="https://wa.me/918700007955?text=Order Shirt">Order Now</a>
+  </div>
+
+  <div class="product" data-category="lower">
+    <img src="https://via.placeholder.com/200">
+    <h3>Lower</h3>
+    <a class="btn" href="https://wa.me/918700007955?text=Order Lower">Order Now</a>
+  </div>
+
+  <div class="product" data-category="shoes">
+    <img src="https://via.placeholder.com/200">
+    <h3>Shoes</h3>
+    <a class="btn" href="https://wa.me/918700007955?text=Order Shoes">Order Now</a>
+  </div>
+
 </div>
 
-<div class="product">
-  <img src="https://via.placeholder.com/200">
-  <h3>Shirt</h3>
-  <a class="btn" href="https://wa.me/918700007955?text=Order Shirt">Order</a>
-</div>
-
-<div class="product">
-  <img src="https://via.placeholder.com/200">
-  <h3>Lower</h3>
-  <a class="btn" href="https://wa.me/918700007955?text=Order Lower">Order</a>
-</div>
-
-<div class="product">
-  <img src="https://via.placeholder.com/200">
-  <h3>Shoes</h3>
-  <a class="btn" href="https://wa.me/918700007955?text=Order Shoes">Order</a>
-</div>
-
-<!-- Floating WhatsApp -->
+<!-- WhatsApp Floating -->
 <a class="whatsapp" href="https://wa.me/918700007955">💬</a>
 
-<!-- Search Script -->
 <script>
 function searchProduct() {
   let input = document.getElementById("searchInput").value.toLowerCase();
@@ -139,13 +174,31 @@ function searchProduct() {
     let text = products[i].innerText.toLowerCase();
 
     if (text.includes(input)) {
-      products[i].style.display = "";
+      products[i].style.display = "block";
     } else {
       products[i].style.display = "none";
+    }
+  }
+}
+
+function filterCategory(category) {
+  let products = document.getElementsByClassName("product");
+  let cats = document.getElementsByClassName("cat");
+
+  for (let c of cats) c.classList.remove("active");
+  event.target.classList.add("active");
+
+  for (let i = 0; i < products.length; i++) {
+    let p = products[i];
+
+    if (category === "all" || p.getAttribute("data-category") === category) {
+      p.style.display = "block";
+    } else {
+      p.style.display = "none";
     }
   }
 }
 </script>
 
 </body>
-</html
+</html>
